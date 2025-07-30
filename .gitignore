@@ -1,0 +1,51 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+scripts/.env
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build and dependency directories
+dist/
+build/
+*.lock
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Specific to your directory structure
+terraform/core-infra/.terraform/
+terraform/core-infra/.terraform.lock.hcl
+terraform/modules/templates/pve_01.pub
+terraform/modules/dns/variables.tf
+terraform/core-infra/vars/test.tfvars
+terraform/modules/dns/a_records.tf.bck

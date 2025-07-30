@@ -1,0 +1,16 @@
+variable "url" {
+	description = "The URL of the dns server."
+	type = string
+	default = "https://your-technitium-server:53443"
+}
+variable "api_token" {
+	description = "The API Token to connect to dns server."
+	type = string
+	default = "your-api-token"
+}
+
+variable "domain" {
+	description = "The domain for the records."
+	type = string
+	default = "example.com"
+}

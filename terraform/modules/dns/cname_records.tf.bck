@@ -1,0 +1,57 @@
+# Network Infrastructure
+resource "technitium_record" "sw1_cname_1" {
+  domain = "KR-PRV-SW-1.${var.zone}"
+  type   = "CNAME"
+  cname  = technitium_record.sw1.domain
+  ttl    = var.ttl
+}
+resource "technitium_record" "sw1_cname_2" {
+  domain = "cbs350.${var.zone}"
+  type   = "CNAME"
+  cname  = technitium_record.sw1.domain
+  ttl    = var.ttl
+}
+resource "technitium_record" "sw2_cname_1" {
+  domain = "KR-PRV-SW-2.${var.zone}"
+  type   = "CNAME"
+  cname  = technitium_record.sw2.domain
+  ttl    = var.ttl
+}
+resource "technitium_record" "sw2_cname_2" {
+  domain = "cbs220.${var.zone}"
+  type   = "CNAME"
+  cname  = technitium_record.sw2.domain
+  ttl    = var.ttl
+}
+resource "technitium_record" "sw3_cname_1" {
+  domain = "KR-PRV-SW-3.${var.zone}"
+  type   = "CNAME"
+  cname  = technitium_record.sw3.domain
+  ttl    = var.ttl
+}
+resource "technitium_record" "sw4_cname_1" {
+  domain = "KR-PRV-SW-4.${var.zone}"
+  type   = "CNAME"
+  cname  = technitium_record.sw4.domain
+  ttl    = var.ttl
+}
+
+# Servers
+resource "technitium_record" "rackstation_cname_1" {
+  domain = "nas.${var.zone}"
+  type   = "CNAME"
+  cname  = technitium_record.rackstation.domain
+  ttl    = var.ttl
+}
+resource "technitium_record" "rackstation_cname_2" {
+  domain = "rs.${var.zone}"
+  type   = "CNAME"
+  cname  = technitium_record.rackstation.domain
+  ttl    = var.ttl
+}
+resource "technitium_record" "diskstation_cname_1" {
+  domain = "ds.${var.zone}"
+  type   = "CNAME"
+  cname  = technitium_record.diskstation.domain
+  ttl    = var.ttl
+}
